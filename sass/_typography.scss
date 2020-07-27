@@ -1,0 +1,23 @@
+.btn {
+  background: var(--button-color);
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0.5rem 2rem;
+  &:not(:last-child) {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  &-outline {
+    background: none;
+    border: 2px solid var(--button-color);
+    &:focus{
+        border: 1px solid var(--button-color);
+    }
+  }
+  &:focus,
+  &:active {
+    border: none;
+    outline: none;
+  }
+}

@@ -1,0 +1,116 @@
+:root {
+  --header-font: 'Montserrat', sans-serif;
+  --footer-font: 'Poppins', sans-serif;
+  --headerAndFooter-background-color: #071f35;
+  --button-color: #f18507;
+  --claim-color: #081f35;
+  --account-input-field-color: #f6f4f4;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+.btn {
+  background: var(--button-color);
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0.5rem 2rem;
+}
+
+.btn:not(:last-child) {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.btn-outline {
+  background: none;
+  border: 2px solid var(--button-color);
+}
+
+.btn-outline:focus {
+  border: 1px solid var(--button-color);
+}
+
+.btn:focus, .btn:active {
+  border: none;
+  outline: none;
+}
+
+.header {
+  padding: 2rem 0;
+  background: var(--headerAndFooter-background-color);
+}
+
+.navbar,
+.navbar-nav,
+.nav-item,
+.nav-link {
+  font-family: var(--header-font);
+  color: white;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.navbar:hover,
+.navbar-nav:hover,
+.nav-item:hover,
+.nav-link:hover {
+  color: white;
+}
+
+.account-form__title {
+  font-family: var(--header-font);
+  font-weight: 600;
+}
+
+.account button {
+  margin-bottom: 5rem;
+}
+
+.account-form__input {
+  background: var(--account-input-field-color);
+}
+
+.account-form__input:focus {
+  outline: none;
+  border-color: none;
+}
+
+.footer {
+  margin-top: 7rem;
+  background: var(--headerAndFooter-background-color);
+  color: white;
+  font-size: 1rem;
+  font-family: var(--footer-font);
+}
+
+.footer h3 {
+  font-size: 1.3rem;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+}
+
+.footer .nav,
+.footer .nav-link {
+  font-family: inherit;
+  font-size: inherit;
+  padding-bottom: 0.5rem;
+}
+
+.footer-social__icon {
+  font-size: 1rem;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,17 @@
+.header {
+  padding: 2rem 0;
+  background: var(--headerAndFooter-background-color);
+}
+.navbar,
+.navbar-nav,
+.nav-item,
+.nav-link {
+  font-family: var(--header-font);
+  color: white;
+  font-weight: 500;
+  font-size: 1.3rem;
+  &:hover {
+    color: white;
+  }
+}
+// .navbar, .navbar-nav, .nav-item, .nav-link
