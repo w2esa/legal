@@ -9,7 +9,10 @@
     />
 
     <!-- GOOGLE FONT -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@500;600&family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -23,7 +26,7 @@
     />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./sass/main.css">
+    <link rel="stylesheet" href="./sass/main.css" />
 
     <title>Hello, world!</title>
   </head>
@@ -31,7 +34,10 @@
     <header class="header">
       <div class="container p-0">
         <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="#">Legal</a>
+          <a class="navbar-brand" href="#"
+            >
+            <img src="./image/logo.png" alt="" class="img-fluid logo" />
+          </a>
           <button
             class="navbar-toggler d-lg-none"
             type="button"
@@ -48,104 +54,132 @@
           <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
               <li class="nav-item active">
-                <a class="nav-link" href="#"
+                <a class="nav-link main-nav-link" href="#"
                   >Home <span class="sr-only">(current)</span></a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link main-nav-link" href="#"
+                  >Actions for Sale/Funding</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link main-nav-link" href="#">News & Reviews</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link main-nav-link" href="#">Help</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link main-nav-link" href="#"
+                  >Terms & Conditions</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link main-nav-link" href="#">Contact Us</a>
               </li>
             </ul>
-            <button class="btn">Sing Up</button>
+            <button class="btn">Sell a Claim</button>
             <button class="btn btn-outline">Login</button>
           </div>
         </nav>
       </div>
     </header>
     <main>
-      <div class="container">
-        <div class="row mt-5 mb-5">
-          <div class="col-md-6">
-            <h2 class="account-title">Account Setting</h2>
+      <section class="jumbotron jumbotron-fluid bg-transparent p-3">
+        <div class="container">
+          <div class="row mt-5 mb-5">
+            <div class="col-md-6">
+              <h2 id="sample" class="account-title">Account Setting</h2>
+            </div>
           </div>
-        </div>
           <div class="row mb-5">
             <div class="col-md-4">
               <h1 class="account-form__title mb-4">
                 Welcome Back
               </h1>
-              <input class="form-control form-control-sm account-form__input mb-4" type="text" placeholder="Jason Silver">
-              <input class="form-control form-control-sm account-form__input mb-4" type="text" placeholder="Jason Silver">
-              <input class="form-control form-control-sm account-form__input mb-4" type="text" placeholder="Jason Silver">
-              <button class="btn mt-2 ">Save</button>
+              <input
+                class="form-control form-control-sm account-form__input mb-4"
+                type="text"
+                placeholder="Name"
+              />
+              <input
+                class="form-control form-control-sm account-form__input mb-4"
+                type="text"
+                placeholder="Mobile number"
+              />
+              <input
+                class="form-control form-control-sm account-form__input mb-4"
+                type="text"
+                placeholder="Profession"
+              />
+              <button class="btn mt-2">Save</button>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7 col-lg-7">
-            <h3>Legal</h3>
-            <p class="w-75">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis nemo sapiente enim labore cumque repudiandae laborum,
-              impedit eveniet, accusantium voluptate excepturi soluta ut ad
-              minima reprehenderit mollitia voluptates. Tempore, illo!
-            </p>
+      <div class="jumbotron bg-transparent mb-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 col-lg-7">
+              <img src="./image/logo.png" alt="" class="img-fluid footer-logo"/>
+              <p class="w-75">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis nemo sapiente enim labore cumque repudiandae laborum,
+                impedit eveniet, accusantium voluptate excepturi soluta ut ad
+                minima reprehenderit mollitia voluptates. Tempore, illo!
+              </p>
+            </div>
+            <div class="col-md-2 col-lg-2">
+              <h3>Support</h3>
+              <nav class="nav flex-column">
+                <a href="#" class="nav-link p-0">FAQ</a>
+                <a href="#" class="nav-link p-0">Contact</a>
+                <a href="#" class="nav-link p-0">Term Service</a>
+                <a href="#" class="nav-link p-0">Live Chat</a>
+              </nav>
+            </div>
+            <div class="col-md-3 col-lg-3">
+              <h3>Contact Us</h3>
+              <ul class="p-0">
+                <li class="d-flex">
+                  <i class="fa fa-map-marker pr-3" aria-hidden="true"></i>
+                  <p>Address will go here, in one or two lines</p>
+                </li>
+                <li class="d-flex">
+                  <i class="fa fa-envelope pr-3" aria-hidden="true"></i>
+                  <p>username@gmail.com</p>
+                </li>
+                <li class="d-flex">
+                  <i class="fa fa-phone pr-3" aria-hidden="true"></i>
+                  <p>+885 11525 45</p>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="col-md-2 col-lg-2">
-            <h3>Support</h3>
-            <nav class="nav flex-column">
-              <a href="#" class="nav-link p-0">FAQ</a>
-              <a href="#" class="nav-link p-0">Contact</a>
-              <a href="#" class="nav-link p-0">Term Service</a>
-              <a href="#" class="nav-link p-0">Live Chat</a>
-            </nav>
-          </div>
-          <div class="col-md-3 col-lg-3">
-            <h3>Contact Us</h3>
-            <ul class="p-0">
-              <li class="d-flex">
-                <i class="fa fa-map-marker pr-3" aria-hidden="true"></i>
-                <p>Address will go here, in one or two lines</p>
-              </li>
-              <li class="d-flex">
-                <i class="fa fa-envelope pr-3" aria-hidden="true"></i>
-                <p>Address will go here, in one or two lines</p>
-              </li>
-              <li class="d-flex">
-                <i class="fa fa-phone pr-3" aria-hidden="true"></i>
-                <p>Address will go here, in one or two lines</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row pb-5">
-          <div class="col-lg-9">Copy Right</div>
-          <div class="col-lg-3">
-            <a href="#">
-              <i class="fa fa-facebook pr-3 footer-social__icon" aria-hidden="true"></i>
-            </a>
-            <a href="#">
-              <i class="fa fa-twitter pr-3 footer-social__icon" aria-hidden="true"></i>
-            </a>
-            <a href="#">
-              <i class="fa fa-youtube-play footer-social__icon" aria-hidden="true"></i>
-            </a>
+          <div class="row">
+            <div class="col-lg-9 col-md-9">&copy; 2019 copyright all reserved by Legal </div>
+            <div class="col-lg-3 col-md-3">
+              <a href="#">
+                <i
+                  class="fa fa-facebook pr-3 footer-social__icon"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <a href="#">
+                <i
+                  class="fa fa-twitter pr-3 footer-social__icon"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <a href="#">
+                <i
+                  class="fa fa-youtube-play footer-social__icon"
+                  aria-hidden="true"
+                ></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>

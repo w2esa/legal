@@ -3,21 +3,28 @@
   border: none;
   outline: none;
   color: white;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   &:not(:last-child) {
     margin-right: 2rem;
     margin-left: 2rem;
   }
   &-outline {
     background: none;
-    border: 2px solid var(--button-color);
-    &:focus{
-        border: 1px solid var(--button-color);
+    border: 2px solid white;
+    &:focus {
+      border: 2px solid white;
     }
   }
   &:focus,
   &:active {
-    border: none;
-    outline: none;
+    outline: none !important;
+    box-shadow: none !important;
   }
+}
+.claim-price-btn {
+  padding: 0.5rem 2rem;
+}
+.claim-edit-btn {
+  padding: 0.5rem 2.5rem;
+  background: var(--claim-color);
 }

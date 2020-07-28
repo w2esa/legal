@@ -1,0 +1,83 @@
+.claims-action {
+  &__icon {
+    background: var(--claim-color);
+    color: white;
+    padding: 0.2rem;
+    border-radius: 0.2em;
+    font-size: 1.5rem;
+    text-align: center;
+    height: 2rem;
+    width: 2.5rem;
+    -webkit-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    -ms-border-radius: 0.2em;
+    -o-border-radius: 0.2em;
+  }
+  & select {
+    border: none;
+    border: 2px solid var(--claim-color);
+    border-radius: 0.2em;
+    background: var(--claim-color);
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.2rem 0;
+    width: 14rem;
+    -webkit-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    -ms-border-radius: 0.2em;
+    -o-border-radius: 0.2em;
+  }
+}
+
+.has-search .form-control {
+  padding: 0.2rem 0.75rem;
+  border: none;
+  border: 1px solid var(--claim-color);
+  min-width: 13rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 65%;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+  transform: translateY(-0.2rem);
+}
+
+.claim {
+  box-shadow: 1px 4px 5px #aaa;
+  padding: 1rem 0;
+  &__item {
+    &__content {
+      font-family: var(--header-font);
+      &--img {
+        width: 15rem;
+        height: 10rem;
+        border-radius: 0.2em;
+      }
+      &--title {
+        color: var(--claim-color);
+      }
+      &--text {
+        color: var(--claim-color);
+        font-size: 0.8rem;
+      }
+      &--link {
+        color: var(--button-color);
+        &:hover {
+          color: var(--button-color);
+          text-decoration: none;
+        }
+      }
+      &--price {
+        color: var(--button-color);
+        font-family: inherit;
+      }
+    }
+  }
+}

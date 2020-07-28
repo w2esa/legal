@@ -2,8 +2,9 @@
   --header-font: 'Montserrat', sans-serif;
   --footer-font: 'Poppins', sans-serif;
   --headerAndFooter-background-color: #071f35;
+  --body-font-color: #071f35;
   --button-color: #f18507;
-  --claim-color: #081f35;
+  --claim-color: #071f35;
   --account-input-field-color: #f6f4f4;
 }
 
@@ -26,7 +27,7 @@ body {
   border: none;
   outline: none;
   color: white;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
 }
 
 .btn:not(:last-child) {
@@ -36,16 +37,26 @@ body {
 
 .btn-outline {
   background: none;
-  border: 2px solid var(--button-color);
+  border: 2px solid white;
 }
 
 .btn-outline:focus {
-  border: 1px solid var(--button-color);
+  border: 2px solid white;
 }
 
 .btn:focus, .btn:active {
-  border: none;
-  outline: none;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.claim-price-btn {
+  padding: 0.5rem 2rem;
+}
+
+.claim-edit-btn {
+  padding: 0.5rem 2.5rem;
+  background: var(--claim-color);
 }
 
 .header {
@@ -53,21 +64,46 @@ body {
   background: var(--headerAndFooter-background-color);
 }
 
-.navbar,
+.logo {
+  width: 7rem;
+  height: auto;
+}
+
+header > .navbar,
 .navbar-nav,
 .nav-item,
 .nav-link {
+  display: inline-block;
   font-family: var(--header-font);
   color: white;
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 0.9rem;
 }
 
-.navbar:hover,
+header > .navbar:hover,
 .navbar-nav:hover,
 .nav-item:hover,
 .nav-link:hover {
   color: white;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active,
+.main-nav-link:visited {
+  border-bottom: 1px solid var(--button-color);
+}
+
+navbar-toggler-icon > i {
+  color: white;
+}
+
+.account {
+  color: var(--body-font-color);
+}
+
+.account-title {
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
 }
 
 .account-form__title {
@@ -75,30 +111,114 @@ body {
   font-weight: 600;
 }
 
-.account button {
-  margin-bottom: 5rem;
-}
-
 .account-form__input {
   background: var(--account-input-field-color);
+  border: none;
 }
 
 .account-form__input:focus {
   outline: none;
-  border-color: none;
+}
+
+.claims-action__icon {
+  background: var(--claim-color);
+  color: white;
+  padding: 0.2rem;
+  border-radius: 0.2em;
+  font-size: 1.5rem;
+  text-align: center;
+  height: 2rem;
+  width: 2.5rem;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
+}
+
+.claims-action select {
+  border: none;
+  border: 2px solid var(--claim-color);
+  border-radius: 0.2em;
+  background: var(--claim-color);
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.2rem 0;
+  width: 14rem;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
+}
+
+.has-search .form-control {
+  padding: 0.2rem 0.75rem;
+  border: none;
+  border: 1px solid var(--claim-color);
+  min-width: 13rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 65%;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+  -webkit-transform: translateY(-0.2rem);
+          transform: translateY(-0.2rem);
+}
+
+.claim {
+  -webkit-box-shadow: 1px 4px 5px #aaa;
+          box-shadow: 1px 4px 5px #aaa;
+  padding: 1rem 0;
+}
+
+.claim__item__content {
+  font-family: var(--header-font);
+}
+
+.claim__item__content--img {
+  width: 15rem;
+  height: 10rem;
+  border-radius: 0.2em;
+}
+
+.claim__item__content--title {
+  color: var(--claim-color);
+}
+
+.claim__item__content--text {
+  color: var(--claim-color);
+  font-size: 0.8rem;
+}
+
+.claim__item__content--link {
+  color: var(--button-color);
+}
+
+.claim__item__content--link:hover {
+  color: var(--button-color);
+  text-decoration: none;
+}
+
+.claim__item__content--price {
+  color: var(--button-color);
+  font-family: inherit;
 }
 
 .footer {
-  margin-top: 7rem;
   background: var(--headerAndFooter-background-color);
   color: white;
-  font-size: 1rem;
+  font-size: .8rem;
   font-family: var(--footer-font);
 }
 
 .footer h3 {
   font-size: 1.3rem;
-  padding-top: 4rem;
   padding-bottom: 1rem;
 }
 
@@ -106,11 +226,25 @@ body {
 .footer .nav-link {
   font-family: inherit;
   font-size: inherit;
-  padding-bottom: 0.5rem;
+  margin-bottom: .5rem;
 }
 
 .footer-social__icon {
   font-size: 1rem;
   color: white;
+}
+
+.footer .fa {
+  margin-top: 0.3rem;
+}
+
+.footer-logo {
+  width: 10rem;
+  height: auto;
+  transform: translateX(-25px);
+  -webkit-transform: translateX(-25px);
+  -moz-transform: translateX(-25px);
+  -ms-transform: translateX(-25px);
+  -o-transform: translateX(-25px);
 }
 /*# sourceMappingURL=main.css.map */

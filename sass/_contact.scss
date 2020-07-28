@@ -1,16 +1,1 @@
-.account {
-  &-form__title {
-    font-family: var(--header-font);
-    font-weight: 600;
-  }
-  & button {
-    margin-bottom: 5rem;
-  }
-  &-form__input {
-    background: var(--account-input-field-color);
-    &:focus {
-      outline: none;
-      border-color: none;
-    }
-  }
-}
+

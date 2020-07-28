@@ -1,23 +1,33 @@
 .footer {
-  margin-top: 7rem;
   background: var(--headerAndFooter-background-color);
   color: white;
-  font-size: 1rem;
+  font-size: .8rem;
   font-family: var(--footer-font);
 
   & h3 {
     font-size: 1.3rem;
-    padding-top: 4rem;
     padding-bottom: 1rem;
   }
   & .nav,
   .nav-link {
     font-family: inherit;
     font-size: inherit;
-    padding-bottom: 0.5rem;
+    margin-bottom: .5rem;
   }
   &-social__icon{
       font-size: 1rem;
       color: white;
   }
+  & .fa{
+      margin-top: 0.3rem;
+  }
+  &-logo{
+    width: 10rem;
+    height: auto;
+    transform: translateX(-25px);
+    -webkit-transform: translateX(-25px);
+    -moz-transform: translateX(-25px);
+    -ms-transform: translateX(-25px);
+    -o-transform: translateX(-25px);
+}
 }

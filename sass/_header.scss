@@ -2,16 +2,31 @@
   padding: 2rem 0;
   background: var(--headerAndFooter-background-color);
 }
-.navbar,
+.logo{
+  width: 7rem;
+  height: auto;
+}
+header > .navbar,
 .navbar-nav,
 .nav-item,
 .nav-link {
+  display: inline-block;
   font-family: var(--header-font);
   color: white;
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 0.9rem;
   &:hover {
     color: white;
   }
 }
+.main-nav-link:hover,
+.main-nav-link:active,
+.main-nav-link:visited {
+  border-bottom: 1px solid var(--button-color);
+}
+
 // .navbar, .navbar-nav, .nav-item, .nav-link
+
+navbar-toggler-icon > i {
+  color: white;
+}
