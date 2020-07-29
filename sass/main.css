@@ -73,7 +73,6 @@ header > .navbar,
 .navbar-nav,
 .nav-item,
 .nav-link {
-  display: inline-block;
   font-family: var(--header-font);
   color: white;
   font-weight: 500;
@@ -111,13 +110,19 @@ navbar-toggler-icon > i {
   font-weight: 600;
 }
 
-.account-form__input {
+.account-form__input, .account-form__input--textarea {
   background: var(--account-input-field-color);
   border: none;
 }
 
-.account-form__input:focus {
+.account-form__input:focus, .account-form__input--textarea:focus {
   outline: none;
+}
+
+.account-form__input--textarea, .account-form__input--textarea--textarea {
+  resize: none;
+  height: 6rem;
+  color: #777;
 }
 
 .claims-action__icon {
@@ -189,11 +194,13 @@ navbar-toggler-icon > i {
 
 .claim__item__content--title {
   color: var(--claim-color);
+  font-family: var(--header-font);
 }
 
 .claim__item__content--text {
-  color: var(--claim-color);
+  color: #777;
   font-size: 0.8rem;
+  font-family: var(--header-font);
 }
 
 .claim__item__content--link {
@@ -208,6 +215,136 @@ navbar-toggler-icon > i {
 .claim__item__content--price {
   color: var(--button-color);
   font-family: inherit;
+}
+
+.claim__item__content__text--title {
+  font-size: 1.5rem;
+  color: var(--body-font-color);
+  font-family: var(--header-font);
+}
+
+.claim__item__content__text--details {
+  font-size: 0.9rem;
+  color: #777;
+  font-family: var(--header-font);
+}
+
+.all-docs__sub__photo {
+  width: 6rem;
+  height: 4.5rem;
+  border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
+}
+
+.sell-claim-form__input,
+.sell-claim-form__input--price,
+.sell-claim-form__input--textarea {
+  border: none;
+  border: 1px solid var(--claim-color);
+}
+
+.sell-claim-form__input:focus,
+.sell-claim-form__input .sell-claim-form__input--price,
+.sell-claim-form__input .sell-claim-form__input,
+.sell-claim-form__input--price:focus,
+.sell-claim-form__input--price .sell-claim-form__input--price,
+.sell-claim-form__input--price .sell-claim-form__input,
+.sell-claim-form__input--textarea:focus,
+.sell-claim-form__input--textarea .sell-claim-form__input--price,
+.sell-claim-form__input--textarea .sell-claim-form__input {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: 1px solid var(--claim-color);
+}
+
+.sell-claim-form__input--textarea,
+.sell-claim-form__input--price--textarea,
+.sell-claim-form__input--textarea--textarea {
+  resize: none;
+  height: 5rem;
+}
+
+.sell-claim-form__input--price {
+  padding-left: 2rem;
+  width: 10rem;
+  transform: translateX(-2rem);
+  -webkit-transform: translateX(-2rem);
+  -moz-transform: translateX(-2rem);
+  -ms-transform: translateX(-2rem);
+  -o-transform: translateX(-2rem);
+}
+
+.form-group label {
+  color: var(--body-font-color);
+  font-size: 1.1rem;
+  padding: 0.4rem;
+  z-index: 1;
+}
+
+.form-group label::after {
+  content: '|';
+  color: var(--body-font-color);
+}
+
+#tabs {
+  border: none !important;
+}
+
+#tabs .nav-tabs .nav-item.show,
+.nav-link .nav-tabs .nav-link.active {
+  color: #dd0101;
+  font-size: 20px;
+}
+
+#tabs .nav-tabs .nav-item,
+.nav-link .nav-tabs .nav-link {
+  color: #40ff00;
+  font-size: 20px;
+}
+
+.faq-questions .faq-question {
+  cursor: pointer;
+}
+
+.faq-questions .faq-question__underline {
+  border-top: 2px solid var(--claim-color);
+}
+
+.faq-questions > .faq-question::after {
+  content: '\f175';
+  /* fa-chevron-down */
+  font-family: 'FontAwesome';
+  position: absolute;
+  right: 14px;
+  margin-top: 8px;
+  font-size: 1.2rem;
+}
+
+.faq-questions > .faq-question[aria-expanded='true']::after {
+  content: '\f176';
+  /* fa-chevron-up */
+}
+
+.faq-question__answer {
+  padding-left: 0.8rem;
+}
+
+.faq-random__question {
+  color: #777777;
+  line-height: 2.5;
+  text-decoration: underline;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.faq-random__question:hover {
+  color: inherit;
 }
 
 .footer {

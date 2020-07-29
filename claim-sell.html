@@ -10,7 +10,7 @@
 
     <!-- GOOGLE FONT -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@500;600&family=Poppins:wght@300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Montserrat:wght@500;600&family=Poppins:wght@300;400&display=swap"
       rel="stylesheet"
     />
     <!-- Bootstrap CSS -->
@@ -34,8 +34,7 @@
     <header class="header">
       <div class="container p-0">
         <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="#"
-            >
+          <a class="navbar-brand" href="#">
             <img src="./image/logo.png" alt="" class="img-fluid logo" />
           </a>
           <button
@@ -85,51 +84,164 @@
       </div>
     </header>
     <main>
-      <section class="jumbotron jumbotron-fluid bg-transparent p-3">
+      <section class="jumbotron jumbotron-fluid bg-transparent m-0">
         <div class="container">
-          <div class="row mt-5 mb-5">
-            <div class="col-md-6">
-              <h2 id="sample" class="account-title">Account Setting</h2>
+          <div class="row">
+            <div class="col-md-6 col-lg-6">
+              <h2 id="sample" class="account-title pb-5">Sell a Claim</h2>
             </div>
           </div>
-          <div class="row mb-5">
-            <div class="col-md-4">
-              <h1 class="account-form__title mb-4">
-                Welcome Back
-              </h1>
+
+          <div class="row">
+            <div class="col-md-8 col-lg-6">
+              <h5 class="claim__item__content--title pb-2">
+                Title of the claim
+              </h5>
+
               <div class="form-group">
                 <input
-                class="form-control form-control-sm account-form__input mb-4"
-                type="text"
-                placeholder="Name"
-              />
+                  class="form-control form-control-md sell-claim-form__input mb-4"
+                  type="text"
+                  placeholder="Title of the claim will go here"
+                />
               </div>
+
+              <h5 class="claim__item__content--title pb-2">
+                About the Claim
+              </h5>
               <div class="form-group">
-                <input
-                class="form-control form-control-sm account-form__input mb-4"
-                type="text"
-                placeholder="Mobile number"
-              />
+                <textarea class="form-control sell-claim-form__input--textarea">
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas vel delectus ratione
+                </textarea>
               </div>
+
+              <h5 class="claim__item__content--title pb-2">
+                Price Range
+              </h5>
+              <div class="form-group d-flex">
+                <label for="inputPrice">
+                  <i class="fa fa-usd" aria-hidden="true"></i>
+                </label>
+                <input id="inputPrice"
+                  class="form-control form-control-md sell-claim-form__input--price mb-4"
+                  type="text"
+                />
+                <label for="inputPrice">
+                  <i class="fa fa-usd" aria-hidden="true"></i>
+                </label>
+                <input id="inputPrice"
+                  class="form-control form-control-md sell-claim-form__input--price mb-4 mr-4"
+                  type="text"
+                />
+              </div>
+
+              <h5 class="claim__item__content--title pb-2">
+                Why are you selling?
+              </h5>
+
               <div class="form-group">
-                <input
-                class="form-control form-control-sm account-form__input mb-4"
-                type="text"
-                placeholder="Profession"
-              />
+                <textarea class="form-control sell-claim-form__input--textarea">
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas vel delectus ratione
+                </textarea>
               </div>
-              <button class="btn mt-2">Save</button>
+
+              <button class="btn" type="submit">Submit</button>
+            </div>
+
+            <div class="col-md-4 col-lg-4 offset-lg-1">
+              <h5 class="claim__item__content--title pb-4">
+                Image of the Claim
+              </h5>
+
+              <div class="all-docs__photos d-flex align-items-center mb-3">
+                <img
+                  src="https://source.unsplash.com/random"
+                  alt=""
+                  class="img-fluid mr-4 claim__item__content--img"
+                />
+                <div class="all-docs__sub__photos">
+                  <div class="all-docs__top__photo mb-3 d-flex">
+                    <img
+                      src="https://source.unsplash.com/random"
+                      alt=""
+                      class="img-fluid all-docs__sub__photo mr-2"
+                    />
+                    <img
+                      src="https://source.unsplash.com/random"
+                      alt=""
+                      class="img-fluid all-docs__sub__photo mr-2"
+                    />
+                  </div>
+                  <div class="all-docs__bottom__photo d-flex">
+                    <img
+                      src="https://source.unsplash.com/random"
+                      alt=""
+                      class="img-fluid all-docs__sub__photo mr-2"
+                    />
+                    <img
+                      src="https://source.unsplash.com/random"
+                      alt=""
+                      class="img-fluid all-docs__sub__photo mr-2"
+                    />
+                  </div>
+                </div>
+              </div>
+              <button class="btn m-0 mb-4">+ Add more</button>
+
+              <h5 class="claim__item__content--title pb-4">
+                All docs or partial docs o none
+              </h5>
+
+              <div class="all-docs__photos d-flex align-items-center mb-3">
+                <img
+                  src="https://source.unsplash.com/random"
+                  alt=""
+                  class="img-fluid mr-4 claim__item__content--img"
+                />
+                <div class="all-docs__sub__photos">
+                  <div class="all-docs__top__photo mb-3 d-flex">
+                    <img
+                      src="https://source.unsplash.com/random"
+                      alt=""
+                      class="img-fluid all-docs__sub__photo mr-2"
+                    />
+                    <img
+                      src="https://source.unsplash.com/random"
+                      alt=""
+                      class="img-fluid all-docs__sub__photo mr-2"
+                    />
+                  </div>
+                  <div class="all-docs__bottom__photo d-flex">
+                    <img
+                      src="https://source.unsplash.com/random"
+                      alt=""
+                      class="img-fluid all-docs__sub__photo mr-2"
+                    />
+                    <img
+                      src="https://source.unsplash.com/random"
+                      alt=""
+                      class="img-fluid all-docs__sub__photo mr-2"
+                    />
+                  </div>
+                </div>
+              </div>
+              <button class="btn m-0">+ Add more</button>
             </div>
           </div>
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="jumbotron bg-transparent mb-0">
         <div class="container">
           <div class="row">
             <div class="col-md-7 col-lg-7">
-              <img src="./image/logo.png" alt="" class="img-fluid footer-logo"/>
+              <img
+                src="./image/logo.png"
+                alt=""
+                class="img-fluid footer-logo"
+              />
               <p class="w-75">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Reiciendis nemo sapiente enim labore cumque repudiandae laborum,
@@ -165,7 +277,9 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-9 col-md-9">&copy; 2019 copyright all reserved by Legal </div>
+            <div class="col-lg-9 col-md-9">
+              &copy; 2019 copyright all reserved by Legal
+            </div>
             <div class="col-lg-3 col-md-3">
               <a href="#">
                 <i

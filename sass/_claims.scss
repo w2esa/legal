@@ -62,10 +62,12 @@
       }
       &--title {
         color: var(--claim-color);
+        font-family: var(--header-font);
       }
       &--text {
-        color: var(--claim-color);
+        color: #777;
         font-size: 0.8rem;
+        font-family: var(--header-font);
       }
       &--link {
         color: var(--button-color);
@@ -78,6 +80,69 @@
         color: var(--button-color);
         font-family: inherit;
       }
+      &__text--title {
+        font-size: 1.5rem;
+        color: var(--body-font-color);
+        font-family: var(--header-font);
+      }
+      &__text--details {
+        font-size: 0.9rem;
+        color: #777;
+        font-family: var(--header-font);
+      }
+    }
+  }
+}
+.all-docs__sub {
+  &__photo {
+    width: 6rem;
+    height: 4.5rem;
+    border-radius: 0.2em;
+    -webkit-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    -ms-border-radius: 0.2em;
+    -o-border-radius: 0.2em;
+  }
+}
+.sell-claim-form__input,
+.sell-claim-form__input--price,
+.sell-claim-form__input--textarea {
+  border: none;
+  border: 1px solid var(--claim-color);
+
+  &:focus,
+  .sell-claim-form__input--price,
+  .sell-claim-form__input {
+    box-shadow: none !important;
+    border: 1px solid var(--claim-color);
+  }
+
+  &--textarea {
+    resize: none;
+    height: 5rem;
+  }
+}
+.sell-claim-form__input--price {
+  padding-left: 2rem;
+  width: 10rem;
+  transform: translateX(-2rem);
+  -webkit-transform: translateX(-2rem);
+  -moz-transform: translateX(-2rem);
+  -ms-transform: translateX(-2rem);
+  -o-transform: translateX(-2rem);
+}
+
+.form-group{
+  & label {
+    // position: absolute;
+    color: var(--body-font-color);
+    font-size: 1.1rem;
+    padding: 0.4rem;
+    z-index: 1;
+  
+    &::after {
+      content: '|';
+      color: var(--body-font-color);
     }
   }
 }

@@ -10,7 +10,7 @@
 
     <!-- GOOGLE FONT -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@500;600&family=Poppins:wght@300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Montserrat:wght@500;600&family=Poppins:wght@300;400&display=swap"
       rel="stylesheet"
     />
     <!-- Bootstrap CSS -->
@@ -34,8 +34,7 @@
     <header class="header">
       <div class="container p-0">
         <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="#"
-            >
+          <a class="navbar-brand" href="#">
             <img src="./image/logo.png" alt="" class="img-fluid logo" />
           </a>
           <button
@@ -85,38 +84,136 @@
       </div>
     </header>
     <main>
-      <section class="jumbotron jumbotron-fluid bg-transparent p-3">
+      <section class="jumbotron jumbotron-fluid bg-transparent m-0">
         <div class="container">
-          <div class="row mt-5 mb-5">
-            <div class="col-md-6">
-              <h2 id="sample" class="account-title">Account Setting</h2>
+          <div class="row">
+            <div class="col-md-6 col-lg-6">
+              <h2 id="sample" class="account-title pb-5">Claim details</h2>
             </div>
           </div>
-          <div class="row mb-5">
-            <div class="col-md-4">
-              <h1 class="account-form__title mb-4">
-                Welcome Back
-              </h1>
+
+          <div class="row">
+            <div class="col-md-8 col-lg-7">
+              <h2 class="claim__item__content--title">
+                Title of the claim
+              </h2>
+              <p class="claim__item__content__text--details pt-4 pb-3">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
+                temporibus dolore praesentium repudiandae. Fugiat dignissimos
+                cum hic nostrum tenetur. Voluptas saepe magnam
+              </p>
+              <h2 class="claim__item__content--price pb-5 m-0">
+                $4,500 - $5,100
+              </h2>
+              <h2 class="claim__item__content__text--title">
+                why are you selling?
+              </h2>
+              <p class="claim__item__content__text--details pt-4 pb-4">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
+                temporibus dolore praesentium repudiandae. Fugiat dignissimos
+                cum hic nostrum tenetur. Voluptas saepe magnam
+              </p>
+              <h2 class="claim__item__content__text--title pb-4">
+                All docs or partial docs o none
+              </h2>
+              <div class="all-docs__photos d-flex align-items-center mb-5">
+                <img
+                  src="https://source.unsplash.com/random"
+                  alt=""
+                  class="img-fluid mr-4 claim__item__content--img"
+                />
+                <div class="all-docs__sub__photos">
+                  <div class="all-docs__top__photo mb-3 d-flex">
+                    <img
+                    src="https://source.unsplash.com/random"
+                    alt=""
+                    class="img-fluid all-docs__sub__photo mr-2"
+                  />
+                  <img
+                    src="https://source.unsplash.com/random"
+                    alt=""
+                    class="img-fluid all-docs__sub__photo mr-2"
+                  />
+                  <img
+                    src="https://source.unsplash.com/random"
+                    alt=""
+                    class="img-fluid all-docs__sub__photo mr-2"
+                  />
+                  <img
+                    src="https://source.unsplash.com/random"
+                    alt=""
+                    class="img-fluid all-docs__sub__photo"
+                  />
+                  </div>
+                  <div class="all-docs__bottom__photo d-flex">
+                    <img
+                    src="https://source.unsplash.com/random"
+                    alt=""
+                    class="img-fluid all-docs__sub__photo mr-2"
+                  />
+                  <img
+                    src="https://source.unsplash.com/random"
+                    alt=""
+                    class="img-fluid all-docs__sub__photo mr-2"
+                  />
+                  <img
+                    src="https://source.unsplash.com/random"
+                    alt=""
+                    class="img-fluid all-docs__sub__photo mr-2"
+                  />
+                  <img
+                    src="https://source.unsplash.com/random"
+                    alt=""
+                    class="img-fluid all-docs__sub__photo"
+                  />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-4 offset-1">
+              <h2 class="claim__item__content--title pb-4">
+                Enquiry
+              </h2>
               <div class="form-group">
                 <input
                 class="form-control form-control-sm account-form__input mb-4"
                 type="text"
-                placeholder="Name"
+                placeholder="Jason Silver"
+              />
+              </div>
+              
+              <div class="form-group">
+                <input
+                class="form-control form-control-sm account-form__input mb-4"
+                type="text"
+                placeholder="+1 123 456 7899"
               />
               </div>
               <div class="form-group">
                 <input
                 class="form-control form-control-sm account-form__input mb-4"
                 type="text"
-                placeholder="Mobile number"
+                placeholder="jasnsilver4414@gmail.com"
               />
               </div>
               <div class="form-group">
                 <input
                 class="form-control form-control-sm account-form__input mb-4"
                 type="text"
-                placeholder="Profession"
+                placeholder="Jason Inc."
               />
+              </div>
+              <div class="form-group">
+                <input
+                class="form-control form-control-sm account-form__input mb-4"
+                type="text"
+                placeholder="Jason Inc."
+              />
+              </div>
+
+              <div class="form-group">
+                <textarea class="form-control account-form__input--textarea">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas vel delectus ratione
+                </textarea>
               </div>
               <button class="btn mt-2">Save</button>
             </div>
@@ -124,12 +221,17 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="jumbotron bg-transparent mb-0">
         <div class="container">
           <div class="row">
             <div class="col-md-7 col-lg-7">
-              <img src="./image/logo.png" alt="" class="img-fluid footer-logo"/>
+              <img
+                src="./image/logo.png"
+                alt=""
+                class="img-fluid footer-logo"
+              />
               <p class="w-75">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Reiciendis nemo sapiente enim labore cumque repudiandae laborum,
@@ -165,7 +267,9 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-9 col-md-9">&copy; 2019 copyright all reserved by Legal </div>
+            <div class="col-lg-9 col-md-9">
+              &copy; 2019 copyright all reserved by Legal
+            </div>
             <div class="col-lg-3 col-md-3">
               <a href="#">
                 <i
