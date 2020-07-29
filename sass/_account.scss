@@ -1,20 +1,22 @@
 .account {
-  color: var(--body-font-color);
+  color: var(--claim-color);
   &-title {
     font-family: 'Libre Baskerville', serif;
     font-style: italic;
+    color: var(--claim-color);
   }
   &-form__title {
     font-family: var(--header-font);
     font-weight: 600;
   }
-  &-form__input, &-form__input--textarea {
+  &-form__input,
+  &-form__input--textarea {
     background: var(--account-input-field-color);
     border: none;
     &:focus {
       outline: none;
     }
-    &--textarea{
+    &--textarea {
       resize: none;
       height: 6rem;
       color: #777;

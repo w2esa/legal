@@ -1,0 +1,137 @@
+.media {
+  position: relative;
+  background: #ddd;
+  font-family: var(--header-font);
+  &-news__image {
+    width: 20rem;
+    height: 19rem;
+  }
+
+  &-img {
+    &__content {
+      width: 40%;
+      color: white;
+      transform: translate(10px, -106px);
+      position: absolute;
+    }
+    &__trend {
+      font-size: 0.7rem;
+      &__title {
+        font-size: 1.3rem;
+        font-weight: 600;
+      }
+      &__date {
+        font-size: 0.9rem;
+        font-family: var(--footer-font);
+      }
+    }
+  }
+
+  &-body {
+    color: var(--claim-color);
+    font-weight: bold;
+    &__trends {
+      padding: 0.5rem 0;
+    }
+
+    &__trend {
+      font-size: 0.7rem;
+      &__title {
+        font-size: 1.3rem;
+        font-weight: 600;
+      }
+      &__date {
+        font-size: 0.7rem;
+        font-family: var(--footer-font);
+      }
+    }
+  }
+}
+.important-news {
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  padding: 1rem;
+
+  box-shadow: 0px 0px 5px 0px #87865f;
+  &__title {
+    font-size: 2rem;
+  }
+  &__details {
+    font-size: 0.9rem;
+  }
+  &__related {
+    font-size: 1rem;
+    color: var(--button-color);
+  }
+}
+.latest-news {
+  color: var(--claim-color);
+  background: #ddd;
+
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-bottom: 2px solid var(--button-color);
+  position: relative;
+  &__category {
+    font-size: 1rem;
+    color: var(--button-color);
+    &::after {
+      content: '\f178';
+      font-family: FontAwesome;
+      right: 27px;
+      top: 10px;
+      position: absolute;
+      color: var(--claim-color);
+    }
+    &:hover {
+      color: var(--button-color);
+      text-decoration: none;
+    }
+    &--title {
+      font-size: 1rem;
+    }
+    &--date {
+      font-size: 0.7rem;
+      font-family: var(--footer-font);
+    }
+  }
+}
+.national-news {
+  background: #ddd;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  &-image {
+    width: 14rem;
+    height: 12rem;
+  }
+  &__body .media-body__trend__title {
+    font-size: 1.5rem;
+    color: var(--claim-color);
+    font-weight: 600;
+    padding-bottom: 1rem;
+  }
+  &__body .media-body__trend__date {
+    font-size: 0.7rem;
+  }
+}
+
+.hot-news {
+  background: #ddd;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  &-image {
+    width: 6rem;
+    height: 6rem;
+  }
+  &__body .media-body__trend__title {
+    font-size: 1rem;
+    color: var(--claim-color);
+    font-weight: 600;
+    padding-bottom: 1rem;
+  }
+  &__body .media-body__trend__date {
+    font-size: 0.7rem;
+    font-family: var(--footer-font);
+  }
+}

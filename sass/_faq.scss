@@ -1,29 +1,27 @@
-#tabs{
-    border: none !important;
-}
-
 #tabs .nav-tabs .nav-item.show,
 .nav-link .nav-tabs .nav-link.active {
-  color: #dd0101;
-//   background-color: transparent;
-//   border-color: transparent transparent #dd0101;
-//   border-bottom: 2px solid !important;
+  color: var(--claim-color);
   font-size: 20px;
-//   border: none;
-//   border-bottom: 2px solid blue;
+  //   background-color: transparent;
+  //   border-color: transparent transparent #dd0101;
+  //   border-bottom: 2px solid !important;
+  //   border: none;
+  //   border-bottom: 2px solid blue;
 }
 
 #tabs .nav-tabs .nav-item,
 .nav-link .nav-tabs .nav-link {
-  color: rgb(64, 255, 0);
+  color: #777777;
   font-size: 20px;
 }
 
 .faq-questions {
   .faq-question {
+    color: var(--claim-color);
+    font-weight: 600;
     cursor: pointer;
     &__underline {
-      border-top: 2px solid var(--claim-color);
+      border-top: 1px solid var(--claim-color);
     }
   }
   & > .faq-question::after {
