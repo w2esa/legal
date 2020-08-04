@@ -22,3 +22,12 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
 }
+
+input:focus{
+  // outline: none;
+  border: none !important;
+  box-shadow: none !important;
+}
+::placeholder{
+  font-size: 1.3rem;
+}

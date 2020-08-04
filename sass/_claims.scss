@@ -1,5 +1,9 @@
 .claims-action {
+  position: relative;
   &__icon {
+    cursor: pointer;
+  }
+  &__icon:nth-child(2) {
     background: var(--claim-color);
     color: white;
     padding: 0.2rem;
@@ -12,6 +16,15 @@
     -moz-border-radius: 0.2em;
     -ms-border-radius: 0.2em;
     -o-border-radius: 0.2em;
+  }
+  &__icon:nth-child(3) {
+    display: none;
+  }
+  &__icon:nth-child(4) {
+    display: none;
+  }
+  &__icon:nth-child(5) {
+    display: none;
   }
   & select {
     border: none;
@@ -27,36 +40,48 @@
     -ms-border-radius: 0.2em;
     -o-border-radius: 0.2em;
   }
-}
-
-.has-search .form-control {
-  padding: 0.2rem 0.75rem;
-  border: none;
-  border: 1px solid var(--claim-color);
-  min-width: 13rem;
-}
-
-.has-search .form-control-feedback {
-  position: absolute;
-  z-index: 2;
-  display: block;
-  width: 65%;
-  height: 2.375rem;
-  line-height: 2.375rem;
-  text-align: center;
-  pointer-events: none;
-  color: #aaa;
-  transform: translateY(-0.2rem);
+  &__search--icon {
+    position: absolute;
+    right: 8px;
+    cursor: pointer;
+    color: #777;
+  }
 }
 
 .claim {
-  box-shadow: 1px 4px 5px #aaa;
-  padding: 1rem 0;
+  width: 100vw;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  &-content {
+    padding: 1rem;
+  }
+  &__sell--img{
+    width: 70%;
+    height: 10rem;
+    border-radius: 0.2em;
+
+
+    
+  }
+  &__sell__sub__photo{
+    width: 100%;
+    height: 4.5rem;
+    border-radius: 0.2em;
+  }
+
   &__item {
+    box-shadow: 1px 4px 5px #aaa;
+    padding: 1rem;
+    &__img {
+      width: 75%;
+      &--content {
+        width: 50%;
+      }
+    }
     &__content {
       font-family: var(--header-font);
       &--img {
-        width: 15rem;
+        width: 35%;
         height: 10rem;
         border-radius: 0.2em;
       }
@@ -79,6 +104,7 @@
       &--price {
         color: var(--button-color);
         font-family: inherit;
+        padding: 1rem 0;
       }
       &__text--title {
         font-size: 1.5rem;
@@ -92,10 +118,25 @@
       }
     }
   }
+  &__search {
+    padding: 3rem 0;
+    &__box {
+      border: none;
+      border: 2px solid var(--claim-color);
+      border-radius: 0.2em;
+      height: 2.2rem;
+      width: 15rem;
+      &:focus {
+        border: transparent;
+
+        box-shadow: none;
+      }
+    }
+  }
 }
 .all-docs__sub {
   &__photo {
-    width: 6rem;
+    width: 100%;
     height: 4.5rem;
     border-radius: 0.2em;
     -webkit-border-radius: 0.2em;
@@ -103,15 +144,14 @@
     -ms-border-radius: 0.2em;
     -o-border-radius: 0.2em;
   }
+
 }
 .sell-claim-form__input,
-.sell-claim-form__input--price,
 .sell-claim-form__input--textarea {
   border: none;
   border: 1px solid var(--claim-color);
 
   &:focus,
-  .sell-claim-form__input--price,
   .sell-claim-form__input {
     box-shadow: none !important;
     border: 1px solid var(--claim-color);
@@ -132,17 +172,27 @@
   -o-transform: translateX(-2rem);
 }
 
-.form-group{
+.form-group {
   & label {
-    // position: absolute;
     color: var(--body-font-color);
     font-size: 1.1rem;
     padding: 0.4rem;
     z-index: 1;
-  
+
     &::after {
       content: '|';
       color: var(--body-font-color);
     }
   }
+}
+
+.claim__details--img{
+  width: 35%;
+}
+.claim__details__top__photo{
+  width: 45%;
+}
+.claim__sell__content--title{
+  color: var(--claim-color);
+  font-family: var(--header-font);
 }

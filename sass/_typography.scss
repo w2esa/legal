@@ -34,3 +34,26 @@
   font-size: 1rem;
   font-weight: 600;
 }
+
+.hero-btn a{
+  color: white;
+  font-family: var(--footer-font);
+  &:hover{
+    text-decoration: none;
+  }
+}
+.feature-btn{
+  background: transparent;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 auto;
+  border: 2px solid var(--claim-color);
+
+  & a{
+    color: var(--claim-color);
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}

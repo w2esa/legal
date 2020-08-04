@@ -22,6 +22,28 @@ body {
   line-height: 1.7;
 }
 
+input:focus {
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+::-webkit-input-placeholder {
+  font-size: 1.3rem;
+}
+
+:-ms-input-placeholder {
+  font-size: 1.3rem;
+}
+
+::-ms-input-placeholder {
+  font-size: 1.3rem;
+}
+
+::placeholder {
+  font-size: 1.3rem;
+}
+
 .btn {
   background: var(--button-color);
   border: none;
@@ -66,8 +88,33 @@ body {
   font-weight: 600;
 }
 
+.hero-btn a {
+  color: white;
+  font-family: var(--footer-font);
+}
+
+.hero-btn a:hover {
+  text-decoration: none;
+}
+
+.feature-btn {
+  background: transparent;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 auto;
+  border: 2px solid var(--claim-color);
+}
+
+.feature-btn a {
+  color: var(--claim-color);
+}
+
+.feature-btn a:hover {
+  text-decoration: none;
+}
+
 .header {
-  padding: 2rem 0;
   background: var(--headerAndFooter-background-color);
 }
 
@@ -99,7 +146,192 @@ header > .navbar:hover,
   border-bottom: 1px solid var(--button-color);
 }
 
-navbar-toggler-icon > i {
+.navbar-toggler-icon {
+  color: white;
+  border: none;
+  line-height: 1.5;
+}
+
+.dielray {
+  display: none;
+}
+
+.dropdown-toggle, .dropdown-toggle-icon {
+  color: #fff;
+}
+
+.dropdown-toggle:hover {
+  color: #fff;
+}
+
+.dropdown-toggle-icon {
+  background-color: #fff;
+  color: #071f35;
+  height: 32px;
+  width: 32px;
+  padding: 7px;
+  border-radius: 50%;
+}
+
+.text-popover {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: .8rem;
+}
+
+.link-popover {
+  color: orange;
+}
+
+.link-popover:hover {
+  color: orange;
+}
+
+.popover {
+  background: #071f35;
+}
+
+.hero {
+  color: white;
+  background-image: url("../image/hero without men.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero__content__intro {
+  font-family: var(--footer-font);
+  margin-left: 2rem !important;
+  font-size: 1.2rem;
+}
+
+.hero__content__left {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 42%;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.hero__content__right--img {
+  width: 425px;
+  height: 100vh;
+}
+
+.we-are__line {
+  position: absolute;
+  background: #fff;
+  height: 1px;
+  width: 10vw;
+  left: 0;
+  margin-top: 16px;
+}
+
+.feature {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url("../image/3.PNG");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url("../image/3.PNG");
+  cursor: pointer;
+  width: 100%;
+  height: 16rem;
+  border-radius: 1.2rem;
+}
+
+.feature:hover {
+  -webkit-box-shadow: 0px 0px 26px 0px #cbd8ba;
+          box-shadow: 0px 0px 26px 0px #cbd8ba;
+}
+
+.feature-heading {
+  color: var(--button-color);
+  font-weight: 500;
+  font-size: 2rem;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.feature-heading::after {
+  content: '';
+  display: block;
+  background: var(--claim-color);
+  height: 3px;
+  width: 7rem;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.feature-pra {
+  color: var(--claim-color);
+  font-size: 1.3rem;
+  padding-bottom: 2rem;
+}
+
+.feature__content {
+  display: none;
+  margin-bottom: 4rem;
+  position: absolute;
+  top: 4px;
+  padding: 1rem;
+}
+
+.feature__content--title {
+  color: white;
+}
+
+.feature__content--pra {
+  font-size: 0.9rem;
+  color: white;
+}
+
+.feature__content--icon {
+  color: var(--button-color);
+  font-size: 2.5rem;
+  padding: 4px;
+  background: white;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 2rem;
+  position: absolute;
+  right: 43%;
+  top: 72%;
+}
+
+.feature__content__show-more {
+  color: var(--claim-color);
+}
+
+.feature__content__show-more:hover {
+  color: var(--claim-color);
+  text-decoration: none;
+}
+
+.feature:hover .feature__content {
+  display: block;
+}
+
+.loggen-bg {
+  background: var(--claim-color);
+}
+
+.loggen-bg a {
+  color: white;
+}
+
+.loggen-bg a:hover {
+  background: var(--claim-color);
   color: white;
 }
 
@@ -111,6 +343,7 @@ navbar-toggler-icon > i {
   font-family: 'Libre Baskerville', serif;
   font-style: italic;
   color: var(--claim-color);
+  padding: 2rem 0;
 }
 
 .account-form__title {
@@ -133,7 +366,15 @@ navbar-toggler-icon > i {
   color: #777;
 }
 
+.claims-action {
+  position: relative;
+}
+
 .claims-action__icon {
+  cursor: pointer;
+}
+
+.claims-action__icon:nth-child(2) {
   background: var(--claim-color);
   color: white;
   padding: 0.2rem;
@@ -146,6 +387,18 @@ navbar-toggler-icon > i {
   -moz-border-radius: 0.2em;
   -ms-border-radius: 0.2em;
   -o-border-radius: 0.2em;
+}
+
+.claims-action__icon:nth-child(3) {
+  display: none;
+}
+
+.claims-action__icon:nth-child(4) {
+  display: none;
+}
+
+.claims-action__icon:nth-child(5) {
+  display: none;
 }
 
 .claims-action select {
@@ -163,31 +416,47 @@ navbar-toggler-icon > i {
   -o-border-radius: 0.2em;
 }
 
-.has-search .form-control {
-  padding: 0.2rem 0.75rem;
-  border: none;
-  border: 1px solid var(--claim-color);
-  min-width: 13rem;
-}
-
-.has-search .form-control-feedback {
+.claims-action__search--icon {
   position: absolute;
-  z-index: 2;
-  display: block;
-  width: 65%;
-  height: 2.375rem;
-  line-height: 2.375rem;
-  text-align: center;
-  pointer-events: none;
-  color: #aaa;
-  -webkit-transform: translateY(-0.2rem);
-          transform: translateY(-0.2rem);
+  right: 8px;
+  cursor: pointer;
+  color: #777;
 }
 
 .claim {
+  width: 100vw;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.claim-content {
+  padding: 1rem;
+}
+
+.claim__sell--img {
+  width: 70%;
+  height: 10rem;
+  border-radius: 0.2em;
+}
+
+.claim__sell__sub__photo {
+  width: 100%;
+  height: 4.5rem;
+  border-radius: 0.2em;
+}
+
+.claim__item {
   -webkit-box-shadow: 1px 4px 5px #aaa;
           box-shadow: 1px 4px 5px #aaa;
-  padding: 1rem 0;
+  padding: 1rem;
+}
+
+.claim__item__img {
+  width: 75%;
+}
+
+.claim__item__img--content {
+  width: 50%;
 }
 
 .claim__item__content {
@@ -195,7 +464,7 @@ navbar-toggler-icon > i {
 }
 
 .claim__item__content--img {
-  width: 15rem;
+  width: 35%;
   height: 10rem;
   border-radius: 0.2em;
 }
@@ -223,6 +492,7 @@ navbar-toggler-icon > i {
 .claim__item__content--price {
   color: var(--button-color);
   font-family: inherit;
+  padding: 1rem 0;
 }
 
 .claim__item__content__text--title {
@@ -237,8 +507,26 @@ navbar-toggler-icon > i {
   font-family: var(--header-font);
 }
 
+.claim__search {
+  padding: 3rem 0;
+}
+
+.claim__search__box {
+  border: none;
+  border: 2px solid var(--claim-color);
+  border-radius: 0.2em;
+  height: 2.2rem;
+  width: 15rem;
+}
+
+.claim__search__box:focus {
+  border: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .all-docs__sub__photo {
-  width: 6rem;
+  width: 100%;
   height: 4.5rem;
   border-radius: 0.2em;
   -webkit-border-radius: 0.2em;
@@ -248,20 +536,14 @@ navbar-toggler-icon > i {
 }
 
 .sell-claim-form__input,
-.sell-claim-form__input--price,
 .sell-claim-form__input--textarea {
   border: none;
   border: 1px solid var(--claim-color);
 }
 
 .sell-claim-form__input:focus,
-.sell-claim-form__input .sell-claim-form__input--price,
 .sell-claim-form__input .sell-claim-form__input,
-.sell-claim-form__input--price:focus,
-.sell-claim-form__input--price .sell-claim-form__input--price,
-.sell-claim-form__input--price .sell-claim-form__input,
 .sell-claim-form__input--textarea:focus,
-.sell-claim-form__input--textarea .sell-claim-form__input--price,
 .sell-claim-form__input--textarea .sell-claim-form__input {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
@@ -269,7 +551,6 @@ navbar-toggler-icon > i {
 }
 
 .sell-claim-form__input--textarea,
-.sell-claim-form__input--price--textarea,
 .sell-claim-form__input--textarea--textarea {
   resize: none;
   height: 5rem;
@@ -297,6 +578,23 @@ navbar-toggler-icon > i {
   color: var(--body-font-color);
 }
 
+.claim__details--img {
+  width: 35%;
+}
+
+.claim__details__top__photo {
+  width: 45%;
+}
+
+.claim__sell__content--title {
+  color: var(--claim-color);
+  font-family: var(--header-font);
+}
+
+.review-left__img {
+  background: #ddd;
+}
+
 .media {
   position: relative;
   background: #ddd;
@@ -304,15 +602,15 @@ navbar-toggler-icon > i {
 }
 
 .media-news__image {
-  width: 20rem;
+  width: 100%;
   height: 19rem;
 }
 
 .media-img__content {
-  width: 40%;
+  width: 90%;
   color: white;
-  -webkit-transform: translate(10px, -106px);
-          transform: translate(10px, -106px);
+  -webkit-transform: translate(30px, -130px);
+          transform: translate(30px, -130px);
   position: absolute;
 }
 
@@ -460,13 +758,16 @@ navbar-toggler-icon > i {
 #tabs .nav-tabs .nav-item.show,
 .nav-link .nav-tabs .nav-link.active {
   color: var(--claim-color);
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 #tabs .nav-tabs .nav-item,
 .nav-link .nav-tabs .nav-link {
   color: #777777;
-  font-size: 20px;
+  font-size: 1rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
 }
 
 .faq-questions .faq-question {
@@ -513,10 +814,313 @@ navbar-toggler-icon > i {
   color: inherit;
 }
 
+.signup {
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Libre Baskerville', serif;
+  color: var(--button-color);
+  padding-top: 5rem;
+  padding-bottom: 5px;
+}
+
+.signup::after {
+  content: '';
+  display: block;
+  background: var(--claim-color);
+  height: 3px;
+  width: 7rem;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.signup-title {
+  text-align: center;
+  font-size: 1rem;
+  color: #777;
+}
+
+.singup-img {
+  width: 100%;
+  height: 100%;
+}
+
+.modal {
+  margin: 0 auto;
+}
+
+.modal-dialog {
+  max-height: 70vh;
+  max-width: 861px;
+}
+
+.email-label,
+.form-check-label,
+.mobile-label,
+.profession-label,
+.sub-label,
+.que-label,
+.fname-label,
+.lname-label,
+.password-label,
+.re-password-label {
+  font-size: 1.2rem;
+  color: var(--claim-color);
+}
+
+.question-us {
+  height: 5rem;
+  width: 100%;
+  resize: none;
+}
+
+input.otp-input {
+  display: inline-block;
+  width: 50px;
+}
+
+.condition {
+  color: var(--button-color);
+}
+
+.close-icon {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 50%;
+  background: var(--button-color);
+  color: #fff;
+  outline: none;
+}
+
+.close-icon:focus {
+  outline: none;
+}
+
+input[type=number] {
+  height: 45px;
+  width: 45px;
+  font-size: 25px;
+  text-align: center;
+  border: 1px solid #000000;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.otp-number__change, .resent {
+  color: var(--button-color);
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+.otp-number__change:hover, .resent:hover {
+  color: var(--button-color);
+}
+
+@media only screen and (max-width: 990px) {
+  .dielray {
+    display: block;
+    position: absolute;
+    right: 5px;
+  }
+  .logo {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important;
+    margin-top: -24px;
+  }
+  .main-nav-link:hover,
+  .main-nav-link:active,
+  .main-nav-link:visited {
+    border-bottom: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .we-are__line {
+    display: none;
+  }
+  .hero__content__intro {
+    margin-left: 0;
+  }
+  .claims-action__icon:nth-child(3) {
+    display: block;
+  }
+  .claims-action__icon:nth-child(4) {
+    display: block;
+  }
+  .claim-content {
+    padding: 1.5rem 1rem;
+  }
+  .claim__select--option {
+    display: none;
+  }
+  .claim__search__box {
+    display: none;
+  }
+  .claim__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .claim__item__img {
+    width: 100%;
+  }
+  .claim__item__img--content {
+    width: 100%;
+  }
+  .claim__item__content--title {
+    font-size: 2rem;
+  }
+  .claim__item__content--text {
+    font-size: 1rem;
+  }
+  .claim__item__content--price {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    padding-top: 0 !important;
+  }
+  .claims-action__search--icon {
+    display: none;
+  }
+  .feature__content {
+    display: none;
+  }
+}
+
+/*Account page start*/
+@media only screen and (max-width: 530px) {
+  /* My Claim page Start*/
+  .claims-action__icon:nth-child(3) {
+    display: block;
+  }
+  .claims-action__icon:nth-child(4) {
+    display: block;
+  }
+  .claim-content {
+    padding: 0 1rem;
+  }
+  .claim__select--option {
+    display: none;
+  }
+  .claim__search__box {
+    display: none;
+  }
+  .claim__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .claim__item__img {
+    width: 100%;
+  }
+  .claim__item__img--content {
+    width: 100%;
+  }
+  .claim__item__content--title {
+    font-size: 1.1rem;
+  }
+  .claim__item__content--title::after {
+    content: '\f040';
+    font-family: FontAwesome;
+  }
+  .claim__item__content--text {
+    font-size: 0.9rem;
+  }
+  .claim__item__content--price {
+    font-size: 1.2rem;
+    padding-top: 0 !important;
+  }
+  .claims-action__search--icon {
+    display: none;
+  }
+  .claim-edit-btn {
+    display: none;
+  }
+  /*My claim page end*/
+  /*Footer section*/
+  .account-title {
+    font-size: 1.5rem;
+  }
+  .account-form__title {
+    font-size: 2rem;
+  }
+  .footer-icons {
+    text-align: center;
+    margin-top: -2rem;
+    margin-bottom: 5rem;
+  }
+  .footer-icons i {
+    font-size: 1.5rem;
+  }
+  .footer-support__title,
+  .footer-contact__title {
+    margin-top: 1.5rem;
+  }
+  .copyright-text {
+    -webkit-transform: translateY(7rem);
+            transform: translateY(7rem);
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /*Claim Sell page start*/
+  .claim__sell--img {
+    width: 60%;
+  }
+  .claim__sell__top__photo, .claim__sell__bottom__photo {
+    width: 60%;
+  }
+  /*Claim Sell page end*/
+  /*Hero section*/
+  .hero__content__left {
+    width: 80%;
+  }
+  .hero__content__right--img {
+    display: none;
+  }
+  .singup-img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .all-docs__sub__photos-2 {
+    display: none;
+  }
+  .all-docs__sub__photo {
+    width: 50%;
+    height: 8rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .claim__sell--img {
+    width: 60%;
+  }
+  .claim__sell__top__photo, .claim__sell__bottom__photo {
+    width: 50%;
+  }
+  .claim__details--img {
+    width: 50%;
+  }
+  .claim__details--right {
+    display: none;
+  }
+}
+
 .footer {
   background: var(--headerAndFooter-background-color);
   color: white;
   font-size: .8rem;
+  margin-top: 3rem;
   font-family: var(--footer-font);
 }
 

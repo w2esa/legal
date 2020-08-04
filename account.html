@@ -10,7 +10,7 @@
 
     <!-- GOOGLE FONT -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Montserrat:wght@500;600&family=Poppins:wght@300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@500;600&family=Poppins:wght@300;400&display=swap"
       rel="stylesheet"
     />
     <!-- Bootstrap CSS -->
@@ -28,7 +28,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./sass/main.css" />
 
-    <title>Claim sell</title>
+    <title>Account Setting</title>
   </head>
   <body>
     <header class="header">
@@ -51,7 +51,8 @@
             <div class="dielray">
               <div class="dropdown  bg-transparent">
                 <a class="btn bg-transparent dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fa fa-user dropdown-toggle-icon" aria-hidden="true"></i>
+                  <!-- <i class="fa fa-user dropdown-toggle-icon" aria-hidden="true"></i> -->
+                  Sell a claim
                 </a>
               
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -101,156 +102,48 @@
       </div>
     </header>
     <main>
-      <section class="jumbotron jumbotron-fluid bg-transparent m-0">
+      <section class="jumbotron jumbotron-fluid bg-transparent p-3">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 col-lg-6">
-              <h2 id="sample" class="account-title sell__claim--title pb-3">Sell a Claim</h2>
+            <div class="col-md-6">
+              <h2 class="account-title">Account Setting</h2>
             </div>
           </div>
-
-          <div class="row">
-            <div class="col-md-8 col-lg-7">
-              <h5 class="claim__sell__content--title pb-2">
-                Title of the claim
-              </h5>
-
+          <div class="row mb-5">
+            <div class="col-md-4">
+              <h1 class="account-form__title mb-4">
+                Welcome Back
+              </h1>
               <div class="form-group">
                 <input
-                  class="form-control form-control-md sell-claim-form__input mb-4"
-                  type="text"
-                  placeholder="Title of the claim will go here"
-                />
+                class="form-control form-control-sm account-form__input mb-4"
+                type="text"
+                placeholder="Name"
+              />
               </div>
-
-              <h5 class="claim__sell__content--title pb-2">
-                About the Claim
-              </h5>
               <div class="form-group">
-                <textarea class="form-control sell-claim-form__input--textarea">
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas vel delectus ratione
-                </textarea>
+                <input
+                class="form-control form-control-sm account-form__input mb-4"
+                type="text"
+                placeholder="Mobile number"
+              />
               </div>
-
-              <h5 class="claim__sell__content--title pb-2">
-                Price Range
-              </h5>              
-           
-              <div class="form-group d-flex">
- 
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">$</span>
-                  </div>
-                  <input type="text" class="form-control mr-3" aria-label="Amount (to the nearest dollar)">
-                </div>
-
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">$</span>
-                  </div>
-                  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                </div>
-
-              </div>
-
-              <h5 class="claim__sell__content--title pb-2">
-                Why are you selling?
-              </h5>
-
               <div class="form-group">
-                <textarea class="form-control sell-claim-form__input--textarea">
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas vel delectus ratione
-                </textarea>
+                <input
+                class="form-control form-control-sm account-form__input mb-4"
+                type="text"
+                placeholder="Profession"
+              />
               </div>
-
-              <button class="btn" type="submit">Submit</button>
-            </div>
-          
-
-            <div class="col-md-4 col-lg-4 offset-lg-1">
-              <h5 class="claim__sell__content--title pb-4">
-                Image of the Claim
-              </h5>
-              <div class="claim__sell__all__photos d-flex align-items-center mb-3">
-                <img
-                  src="https://source.unsplash.com/random"
-                  alt=""
-                  class="img-fluid mr-2 claim__sell--img"
-                />
-                <div class="claim__sell__photos">
-                  <div class="claim__sell__top__photo mb-3 d-flex">
-                    <img
-                      src="https://source.unsplash.com/random"
-                      alt=""
-                      class="img-fluid claim__sell__sub__photo mr-2"
-                    />
-                    <img
-                      src="https://source.unsplash.com/random"
-                      alt=""
-                      class="img-fluid claim__sell__sub__photo mr-2"
-                    />
-                  </div>
-                  <div class="claim__sell__bottom__photo d-flex">
-                     <img
-                      src="https://source.unsplash.com/random"
-                      alt=""
-                      class="img-fluid claim__sell__sub__photo mr-2"
-                    />
-                    <img
-                      src="https://source.unsplash.com/random"
-                      alt=""
-                      class="img-fluid claim__sell__sub__photo mr-2"
-                    />
-                  </div>
-                </div>
-              </div>
-              <button class="btn m-0 mb-4">+ Add more</button>
-              <h5 class="claim__item__content--title pb-4">
-                All docs or partial docs o none
-              </h5>
-
-              <div class="claim__sell__all__photos d-flex align-items-center mb-3">
-                <img
-                  src="https://source.unsplash.com/random"
-                  alt=""
-                  class="img-fluid mr-2 claim__sell--img"
-                />
-                <div class="claim__sell__photos">
-                  <div class="claim__sell__top__photo mb-3 d-flex">
-                    <img
-                      src="https://source.unsplash.com/random"
-                      alt=""
-                      class="img-fluid claim__sell__sub__photo mr-2"
-                    />
-                    <img
-                      src="https://source.unsplash.com/random"
-                      alt=""
-                      class="img-fluid claim__sell__sub__photo mr-2"
-                    />
-                  </div>
-                  <div class="claim__sell__bottom__photo d-flex">
-                     <img
-                      src="https://source.unsplash.com/random"
-                      alt=""
-                      class="img-fluid claim__sell__sub__photo mr-2"
-                    />
-                    <img
-                      src="https://source.unsplash.com/random"
-                      alt=""
-                      class="img-fluid claim__sell__sub__photo mr-2"
-                    />
-                  </div>
-                </div>
-              </div>
-              <button class="btn m-0">+ Add more</button>
+              <button class="btn mt-2">Save</button>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
+
+   <footer class="footer">
       <div class="jumbotron bg-transparent mb-0">
         <div class="container">
           <div class="row">
@@ -318,7 +211,6 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas vel del
         </div>
       </div>
     </footer>
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

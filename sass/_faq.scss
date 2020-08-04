@@ -1,7 +1,7 @@
 #tabs .nav-tabs .nav-item.show,
 .nav-link .nav-tabs .nav-link.active {
   color: var(--claim-color);
-  font-size: 20px;
+  font-size: 1rem;
   //   background-color: transparent;
   //   border-color: transparent transparent #dd0101;
   //   border-bottom: 2px solid !important;
@@ -12,7 +12,8 @@
 #tabs .nav-tabs .nav-item,
 .nav-link .nav-tabs .nav-link {
   color: #777777;
-  font-size: 20px;
+  font-size: 1rem;
+  flex: 0 1 auto;
 }
 
 .faq-questions {
